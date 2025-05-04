@@ -5,7 +5,7 @@
 **Spring Boot REST API for an e-commerce demo site.**
 
 ## Tech stack
-- Java 17, Spring Boot 3
+- Java 21, Spring Boot 3
 - Spring Data JPA (Hibernate) & PostgreSQL
 - Spring Security 6 (JWT)
 - Maven, Docker (soon)
