@@ -1,4 +1,6 @@
 # eCommerceSite
+![CI](https://github.com/IonGondrea/eCommerceSite/actions/workflows/ci.yml/badge.svg)
+
 
 **Spring Boot REST API for an e-commerce demo site.**
 
