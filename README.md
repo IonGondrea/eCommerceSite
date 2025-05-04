@@ -17,3 +17,11 @@ cd eCommerceSite
 # start backend
 ./mvnw spring-boot:run
 The API will be available at http://localhost:8080/api
+
+## Roadmap
+- [x] Project skeleton
+- [ ] Categories CRUD
+- [ ] Products & pagination
+- [ ] JWT authentication
+- [ ] Docker Compose for DB + app
+- [ ] React front-end
