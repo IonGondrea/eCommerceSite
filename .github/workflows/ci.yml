@@ -1,5 +1,6 @@
 name: build
 
+# rulează workflow-ul la fiecare push și pull request
 on: [push, pull_request]
 
 jobs:
@@ -7,12 +8,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1) clonează repo-ul
       - uses: actions/checkout@v4
 
+      # 2) instalează Temurin JDK 21
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '21'  
+          java-version: '21'
 
+      # 3) setează permisiunea de execuție pe mvnw (Linux runner)
+      - name: Make mvnw executable
+        run: chmod +x mvnw
+
+      # 4) build + teste
       - name: Build with Maven
         run: ./mvnw -B verify
